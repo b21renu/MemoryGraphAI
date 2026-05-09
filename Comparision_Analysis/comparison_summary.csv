@@ -1,0 +1,16 @@
+Metric,Graph_RAG,Vector_RAG,Winner
+Precision@K,0.3556,0.4222,Vector ✓
+Recall@K,0.7796,0.4667,Graph ✓
+F1@K,0.4862,0.4409,Graph ✓
+MRR,0.787,0.787,Tie
+MAP,0.5349,0.3407,Graph ✓
+nDCG@K,0.6582,0.4957,Graph ✓
+HitRate@K,1.0,1.0,Tie
+EntityCoverage,0.9537,0.4667,Graph ✓
+Judge:Relevance[1-5],4.2222,4.2222,Tie
+Judge:Faithfulness[1-5],2.1111,3.0,Vector ✓
+Judge:Completeness[1-5],2.2222,3.0,Vector ✓
+Context:Sufficiency[1-5],4.3333,3.8889,Graph ✓
+Context:Precision[1-5],4.6667,4.3333,Graph ✓
+Context:Structural Richness[1-5],4.1111,2.6667,Graph ✓
+Latency(s),0.546,0.5277,Vector ✓

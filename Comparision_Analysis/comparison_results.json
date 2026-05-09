@@ -1,0 +1,979 @@
+{
+  "summary": {
+    "graph_rag": {
+      "ranking": {
+        "Precision@K": 0.3556,
+        "Recall@K": 0.7796,
+        "F1@K": 0.4862,
+        "MRR": 0.787,
+        "MAP": 0.5349,
+        "nDCG@K": 0.6582,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.9537
+      },
+      "judge_answer": {
+        "relevance": 4.2222,
+        "faithfulness": 2.1111,
+        "completeness": 2.2222
+      },
+      "judge_context": {
+        "sufficiency": 4.3333,
+        "precision": 4.6667,
+        "structural_richness": 4.1111
+      }
+    },
+    "vector_rag": {
+      "ranking": {
+        "Precision@K": 0.4222,
+        "Recall@K": 0.4667,
+        "F1@K": 0.4409,
+        "MRR": 0.787,
+        "MAP": 0.3407,
+        "nDCG@K": 0.4957,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.4667
+      },
+      "judge_answer": {
+        "relevance": 4.2222,
+        "faithfulness": 3.0,
+        "completeness": 3.0
+      },
+      "judge_context": {
+        "sufficiency": 3.8889,
+        "precision": 4.3333,
+        "structural_richness": 2.6667
+      }
+    }
+  },
+  "per_query": [
+    {
+      "query": "What retrieval techniques does MegaRAG use to answer questions?",
+      "query_type": "TYPE B \u2014 relationship-reasoning",
+      "relevant_entities": [
+        "Vector Similarity Search",
+        "Dual-level Retrieval",
+        "MegaRAG",
+        "One-hop Expansion",
+        "Graph Traversal"
+      ],
+      "graph_retrieved": [
+        "Sparse Retrieval",
+        "Multi-hop Reasoning",
+        "Dense Retrieval",
+        "MegaRAG",
+        "Empowerment",
+        "MMRAG Benchmark",
+        "LightRAG",
+        "Graph Traversal",
+        "Comprehensiveness",
+        "Diversity",
+        "HybridRAG",
+        "ColPaLi",
+        "One-hop Expansion",
+        "Dual-level Retrieval",
+        "Fragmented Knowledge",
+        "Vector Similarity Search",
+        "Cross-modal Reasoning",
+        "GME",
+        "NaiveRAG",
+        "GPT-4o-mini",
+        "Over-smoothing Problem",
+        "Multi-hop QA",
+        "Knowledge Graph",
+        "Global QA",
+        "Local QA",
+        "DSE",
+        "Multimodal Knowledge Graph",
+        "GraphRAG",
+        "Context Window Limitation"
+      ],
+      "vector_retrieved": [
+        "Sparse Retrieval",
+        "Multi-hop Reasoning",
+        "Dense Retrieval",
+        "MegaRAG",
+        "Empowerment"
+      ],
+      "graph_triples_count": 12,
+      "graph_context": "(MegaRAG) --[enables]--> (Multi-hop Reasoning)\n(MegaRAG) --[measured by]--> (Empowerment)\n(MegaRAG) --[measured by]--> (Comprehensiveness)\n(MegaRAG) --[measured by]--> (Diversity)\n(MegaRAG) --[outperforms]--> (LightRAG)\n(MegaRAG) --[uses technique]--> (One-hop Expansion)\n(MegaRAG) --[uses technique]--> (Dual-level Retrieval)\n(Dense Retrieval) --[uses technique]--> (Vector Similarity Search)\n(MegaRAG) --[uses technique]--> (Graph Traversal)\n(MegaRAG) --[addresses]--> (Fragmented Knowledge)\n(MegaRAG) --[enables]--> (Cross-modal Reasoning)\n(MegaRAG) --[uses model]--> (GME)",
+      "vector_context": "Entity: Sparse Retrieval (relevance=0.224)\n  Description: A retrieval approach using lexical heuristics like TF-IDF and BM25 to match queries with text segments.\n\nEntity: Multi-hop Reasoning (relevance=0.220)\n  Description: The ability to answer questions by chaining multiple reasoning steps across connected entities in a knowledge graph.\n\nEntity: Dense Retrieval (relevance=0.207)\n  Description: A retrieval approach that projects queries and documents into a shared embedding space for semantic similarity-based matching.\n\nEntity: MegaRAG (relevance=0.201)\n  Description: A multimodal knowledge g",
+      "graph_answer": "MegaRAG uses technique Dual-level Retrieval to answer questions. Additionally, MegaRAG also uses technique Graph Traversal. The relationship type \"uses technique\" indicates that MegaRAG utilizes these techniques. Furthermore, MegaRAG also uses One-hop Expansion as a technique, as indicated by the \"uses technique\" relationship.",
+      "vector_answer": "MegaRAG is a retrieval augmented generation system, but the specific retrieval techniques it uses are not described. However, other entities describe two common retrieval approaches: Sparse Retrieval uses lexical heuristics like TF-IDF and BM25, while Dense Retrieval projects queries and documents into a shared embedding space for semantic similarity-based matching. MegaRAG combines visual, textual, and structural information for document question answering, but the retrieval techniques used are not specified. The system's ability to answer questions may involve Multi-hop Reasoning, which chains multiple reasoning steps across connected entities in a knowledge graph.",
+      "graph_ranking_metrics": {
+        "Precision@K": 0.2,
+        "Recall@K": 0.4,
+        "F1@K": 0.2667,
+        "MRR": 0.25,
+        "MAP": 0.2658,
+        "nDCG@K": 0.2531,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 1.0,
+        "Latency(s)": 0.5315
+      },
+      "vector_ranking_metrics": {
+        "Precision@K": 0.2,
+        "Recall@K": 0.2,
+        "F1@K": 0.2,
+        "MRR": 0.25,
+        "MAP": 0.05,
+        "nDCG@K": 0.1461,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.2,
+        "Latency(s)": 0.7816
+      },
+      "graph_judge_scores": {
+        "relevance": 5,
+        "faithfulness": 3,
+        "completeness": 4,
+        "reasoning": "The generated answer partially addresses the question, is mostly correct with minor issues, and covers most key points, but could be more comprehensive in its explanation.",
+        "relevance_norm": 1.0,
+        "faithfulness_norm": 0.5,
+        "completeness_norm": 0.75
+      },
+      "vector_judge_scores": {
+        "relevance": 3,
+        "faithfulness": 2,
+        "completeness": 2,
+        "reasoning": "The generated answer partially addresses the question but introduces unrelated retrieval approaches and lacks specific details about MegaRAG's techniques.",
+        "relevance_norm": 0.5,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.25
+      },
+      "graph_context_judge": {
+        "sufficiency": 4,
+        "precision": 4,
+        "structural_richness": 3,
+        "reasoning": "The context partially enables a correct answer by mentioning specific retrieval techniques used by MegaRAG, but some relevant information is missing.",
+        "sufficiency_norm": 0.75,
+        "precision_norm": 0.75,
+        "structural_richness_norm": 0.5
+      },
+      "vector_context_judge": {
+        "sufficiency": 4,
+        "precision": 4,
+        "structural_richness": 2,
+        "reasoning": "The context partially enables a correct answer by mentioning MegaRAG, but lacks specific details about its retrieval techniques.",
+        "sufficiency_norm": 0.75,
+        "precision_norm": 0.75,
+        "structural_richness_norm": 0.25
+      }
+    },
+    {
+      "query": "How does using a knowledge graph reduce hallucination in LLM responses?",
+      "query_type": "TYPE A \u2014 traversal-required",
+      "relevant_entities": [
+        "Hallucination",
+        "Knowledge Graph",
+        "Multi-hop Reasoning",
+        "GraphRAG"
+      ],
+      "graph_retrieved": [
+        "Multimodal Knowledge Graph",
+        "LightRAG",
+        "Hallucination",
+        "Knowledge Graph",
+        "Graph Traversal",
+        "MegaRAG",
+        "GraphRAG",
+        "Multi-hop Reasoning",
+        "Graph Refinement",
+        "One-hop Expansion",
+        "Context Window Limitation",
+        "Dual-level Retrieval",
+        "MMKG Construction",
+        "HybridRAG",
+        "Dense Retrieval",
+        "Global QA",
+        "Multi-hop QA"
+      ],
+      "vector_retrieved": [
+        "Multimodal Knowledge Graph",
+        "LightRAG",
+        "Hallucination",
+        "Knowledge Graph",
+        "Graph Traversal"
+      ],
+      "graph_triples_count": 11,
+      "graph_context": "(Multimodal Knowledge Graph) --[extends]--> (Knowledge Graph)\n(Hallucination) --[mitigated by]--> (Knowledge Graph)\n(Knowledge Graph) --[reduces]--> (Hallucination)\n(LightRAG) --[uses technique]--> (Graph Traversal)\n(LightRAG) --[improves over]--> (GraphRAG)\n(Hallucination) --[caused by]--> (Context Window Limitation)\n(LightRAG) --[uses technique]--> (Dual-level Retrieval)\n(Knowledge Graph) --[enables]--> (Multi-hop Reasoning)\n(LightRAG) --[uses technique]--> (Dense Retrieval)\n(Graph Traversal) --[uses technique]--> (One-hop Expansion)\n(Graph Traversal) --[enables]--> (Multi-hop Reasoning)",
+      "vector_context": "Entity: Multimodal Knowledge Graph (relevance=0.210)\n  Description: A knowledge graph that associates entities with aligned visual, numeric, and textual descriptions across modalities.\n\nEntity: LightRAG (relevance=0.207)\n  Description: An efficient graph-based RAG system introducing two-stage retrieval with local and global keywords to reduce repeated LLM inference and improve scalability.\n\nEntity: Hallucination (relevance=0.204)\n  Description: The tendency of LLMs to generate plausible-sounding but factually incorrect information when context is insufficient.\n\nEntity: Knowledge Graph (relevan",
+      "graph_answer": "Using a Knowledge Graph reduces Hallucination, as indicated by the (Knowledge Graph) --[reduces]--> (Hallucination) relationship. Hallucination is caused by Context Window Limitation, according to the (Hallucination) --[caused by]--> (Context Window Limitation) relationship. The Knowledge Graph enables Multi-hop Reasoning, as shown by the (Knowledge Graph) --[enables]--> (Multi-hop Reasoning) relationship, which can help mitigate Hallucination.",
+      "vector_answer": "Using a Knowledge Graph can reduce hallucination in LLM responses by providing a structured representation of information as entities and semantic relationships between them. A Multimodal Knowledge Graph, in particular, associates entities with aligned visual, numeric, and textual descriptions across modalities, which can help LLMs generate more accurate information. By navigating a knowledge graph through Graph Traversal, LLMs can discover connected entities and relationships, potentially reducing the tendency to generate factually incorrect information.",
+      "graph_ranking_metrics": {
+        "Precision@K": 0.4,
+        "Recall@K": 1.0,
+        "F1@K": 0.5714,
+        "MRR": 0.3333,
+        "MAP": 0.4405,
+        "nDCG@K": 0.6166,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 1.0,
+        "Latency(s)": 0.6628
+      },
+      "vector_ranking_metrics": {
+        "Precision@K": 0.4,
+        "Recall@K": 0.5,
+        "F1@K": 0.4444,
+        "MRR": 0.3333,
+        "MAP": 0.2083,
+        "nDCG@K": 0.3633,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.5,
+        "Latency(s)": 0.5118
+      },
+      "graph_judge_scores": {
+        "relevance": 5,
+        "faithfulness": 2,
+        "completeness": 2,
+        "reasoning": "The generated answer partially addresses the question but introduces incorrect relationships and concepts, failing to accurately represent the ground truth.",
+        "relevance_norm": 1.0,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.25
+      },
+      "vector_judge_scores": {
+        "relevance": 5,
+        "faithfulness": 4,
+        "completeness": 4,
+        "reasoning": "The generated answer accurately addresses the question, but slightly deviates from the ground truth by mentioning 'Multimodal Knowledge Graph' and 'Graph Traversal', which are not explicitly mentioned in the ground truth.",
+        "relevance_norm": 1.0,
+        "faithfulness_norm": 0.75,
+        "completeness_norm": 0.75
+      },
+      "graph_context_judge": {
+        "sufficiency": 5,
+        "precision": 5,
+        "structural_richness": 5,
+        "reasoning": "The context provides a clear chain of relationships between knowledge graphs, hallucination, and LightRAG, enabling a correct answer to the question.",
+        "sufficiency_norm": 1.0,
+        "precision_norm": 1.0,
+        "structural_richness_norm": 1.0
+      },
+      "vector_context_judge": {
+        "sufficiency": 3,
+        "precision": 4,
+        "structural_richness": 2,
+        "reasoning": "The context partially helps to answer the question by mentioning hallucination and knowledge graphs, but lacks specific information on how knowledge graphs reduce hallucination in LLM responses.",
+        "sufficiency_norm": 0.5,
+        "precision_norm": 0.75,
+        "structural_richness_norm": 0.25
+      }
+    },
+    {
+      "query": "What problem is caused by context window limitations and which system addresses it?",
+      "query_type": "TYPE C \u2014 multi-hop",
+      "relevant_entities": [
+        "Hallucination",
+        "Fragmented Knowledge",
+        "Context Window Limitation",
+        "MegaRAG"
+      ],
+      "graph_retrieved": [
+        "Context Window Limitation",
+        "Over-smoothing Problem",
+        "Hallucination",
+        "LightRAG",
+        "MegaRAG",
+        "GraphRAG",
+        "Fragmented Knowledge",
+        "Graph Traversal",
+        "Knowledge Graph",
+        "Dense Retrieval",
+        "MMRAG Benchmark",
+        "Dual-level Retrieval",
+        "NaiveRAG",
+        "One-hop Expansion",
+        "Cross-modal Reasoning",
+        "Multi-hop Reasoning",
+        "Diversity",
+        "GME",
+        "Multimodal Knowledge Graph",
+        "GPT-4o-mini",
+        "Comprehensiveness",
+        "Empowerment"
+      ],
+      "vector_retrieved": [
+        "Context Window Limitation",
+        "Over-smoothing Problem",
+        "Hallucination",
+        "LightRAG",
+        "MegaRAG"
+      ],
+      "graph_triples_count": 12,
+      "graph_context": "(Hallucination) --[caused by]--> (Context Window Limitation)\n(MegaRAG) --[addresses]--> (Context Window Limitation)\n(Over-smoothing Problem) --[occurs in]--> (Dense Retrieval)\n(MegaRAG) --[outperforms]--> (LightRAG)\n(LightRAG) --[improves over]--> (GraphRAG)\n(MegaRAG) --[outperforms]--> (GraphRAG)\n(Hallucination) --[mitigated by]--> (Knowledge Graph)\n(MegaRAG) --[addresses]--> (Fragmented Knowledge)\n(MegaRAG) --[outperforms]--> (NaiveRAG)\n(MegaRAG) --[uses technique]--> (One-hop Expansion)\n(MegaRAG) --[enables]--> (Cross-modal Reasoning)\n(LightRAG) --[uses technique]--> (Graph Traversal)",
+      "vector_context": "Entity: Context Window Limitation (relevance=0.261)\n  Description: The constraint on LLMs that limits how much text can be processed at once, making long-document reasoning difficult.\n\nEntity: Over-smoothing Problem (relevance=0.243)\n  Description: A problem in deep graph neural networks where repeated aggregation causes node representations to become indistinguishable.\n\nEntity: Hallucination (relevance=0.149)\n  Description: The tendency of LLMs to generate plausible-sounding but factually incorrect information when context is insufficient.\n\nEntity: LightRAG (relevance=0.104)\n  Description: An",
+      "graph_answer": "Hallucination is caused by Context Window Limitation. MegaRAG addresses Context Window Limitation. The relationship type between Hallucination and Context Window Limitation is \"caused by\", and the relationship type between MegaRAG and Context Window Limitation is \"addresses\".",
+      "vector_answer": "The context window limitation causes long-document reasoning to be difficult. Hallucination is also related to insufficient context, which is a consequence of context window limitations. LightRAG and MegaRAG are systems that could potentially address the issue of context window limitations, but only LightRAG is described as improving scalability, which might be related to processing larger contexts. MegaRAG is a multimodal system, but its description does not explicitly mention addressing context window limitations.",
+      "graph_ranking_metrics": {
+        "Precision@K": 0.4,
+        "Recall@K": 1.0,
+        "F1@K": 0.5714,
+        "MRR": 1.0,
+        "MAP": 0.7095,
+        "nDCG@K": 0.8667,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 1.0,
+        "Latency(s)": 0.3281
+      },
+      "vector_ranking_metrics": {
+        "Precision@K": 0.6,
+        "Recall@K": 0.75,
+        "F1@K": 0.6667,
+        "MRR": 1.0,
+        "MAP": 0.5667,
+        "nDCG@K": 0.7366,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.75,
+        "Latency(s)": 0.512
+      },
+      "graph_judge_scores": {
+        "relevance": 5,
+        "faithfulness": 2,
+        "completeness": 2,
+        "reasoning": "The answer partially addresses the question, but introduces incorrect relationships and lacks detail, resulting in low faithfulness and completeness scores.",
+        "relevance_norm": 1.0,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.25
+      },
+      "vector_judge_scores": {
+        "relevance": 4,
+        "faithfulness": 2,
+        "completeness": 3,
+        "reasoning": "The generated answer partially addresses the question, but introduces incorrect information about MegaRAG and LightRAG, and fails to accurately describe the problems caused by context window limitations.",
+        "relevance_norm": 0.75,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.5
+      },
+      "graph_context_judge": {
+        "sufficiency": 5,
+        "precision": 5,
+        "structural_richness": 5,
+        "reasoning": "The context provides a clear and relevant chain of relationships between context window limitations, MegaRAG, and other related concepts, enabling a correct answer to the question.",
+        "sufficiency_norm": 1.0,
+        "precision_norm": 1.0,
+        "structural_richness_norm": 1.0
+      },
+      "vector_context_judge": {
+        "sufficiency": 3,
+        "precision": 4,
+        "structural_richness": 2,
+        "reasoning": "The context partially helps to answer the question by mentioning context window limitations, but it lacks a clear connection to the system that addresses it.",
+        "sufficiency_norm": 0.5,
+        "precision_norm": 0.75,
+        "structural_richness_norm": 0.25
+      }
+    },
+    {
+      "query": "What techniques does GraphRAG use and what are its limitations?",
+      "query_type": "TYPE B \u2014 relationship-reasoning",
+      "relevant_entities": [
+        "Entity Extraction",
+        "GraphRAG",
+        "Knowledge Graph",
+        "Context Window Limitation",
+        "Community Detection"
+      ],
+      "graph_retrieved": [
+        "GraphRAG",
+        "Precision",
+        "Fragmented Knowledge",
+        "LightRAG",
+        "MMKG Construction",
+        "MegaRAG",
+        "Entity Extraction",
+        "Context Window Limitation",
+        "Community Detection",
+        "Knowledge Graph",
+        "Dense Retrieval",
+        "Multimodal Knowledge Graph",
+        "Dual-level Retrieval",
+        "Multi-hop QA",
+        "Graph Traversal",
+        "Relation Extraction"
+      ],
+      "vector_retrieved": [
+        "GraphRAG",
+        "Precision",
+        "Fragmented Knowledge",
+        "LightRAG",
+        "MMKG Construction"
+      ],
+      "graph_triples_count": 12,
+      "graph_context": "(LightRAG) --[improves over]--> (GraphRAG)\n(GraphRAG) --[uses technique]--> (Community Detection)\n(GraphRAG) --[builds]--> (Knowledge Graph)\n(GraphRAG) --[uses technique]--> (Entity Extraction)\n(GraphRAG) --[addresses]--> (Multi-hop QA)\n(GraphRAG) --[suffers from]--> (Context Window Limitation)\n(Fragmented Knowledge) --[caused by]--> (Context Window Limitation)\n(LightRAG) --[uses technique]--> (Dense Retrieval)\n(MMKG Construction) --[involves]--> (Entity Extraction)\n(MMKG Construction) --[produces]--> (Multimodal Knowledge Graph)\n(LightRAG) --[uses technique]--> (Dual-level Retrieval)\n(LightRAG) --[uses technique]--> (Graph Traversal)",
+      "vector_context": "Entity: GraphRAG (relevance=0.313)\n  Description: Microsoft's knowledge graph-based RAG system that builds entity-relation graphs from text using LLMs and uses hierarchical community detection for corpus-level reasoning.\n\nEntity: Precision (relevance=0.159)\n  Description: A retrieval metric measuring the fraction of retrieved items that are relevant to the query.\n\nEntity: Fragmented Knowledge (relevance=0.145)\n  Description: The problem where document chunks are processed independently, causing relationships that span chunk boundaries to be missed.\n\nEntity: LightRAG (relevance=0.091)\n  Descrip",
+      "graph_answer": "GraphRAG uses techniques such as Community Detection and Entity Extraction, as indicated by the (GraphRAG) --[uses technique]--> (Community Detection) and (GraphRAG) --[uses technique]--> (Entity Extraction) relationships. GraphRAG suffers from Context Window Limitation, according to the (GraphRAG) --[suffers from]--> (Context Window Limitation) relationship. This limitation is also the cause of Fragmented Knowledge, as shown by the (Fragmented Knowledge) --[caused by]--> (Context Window Limitation) relationship.",
+      "vector_answer": "GraphRAG uses LLMs and hierarchical community detection to build entity-relation graphs from text. This approach may be limited by the problem of Fragmented Knowledge, where relationships that span chunk boundaries are missed. GraphRAG's use of LLMs for corpus-level reasoning may also lead to scalability issues, which is addressed by more efficient systems like LightRAG.",
+      "graph_ranking_metrics": {
+        "Precision@K": 0.5,
+        "Recall@K": 1.0,
+        "F1@K": 0.6667,
+        "MRR": 1.0,
+        "MAP": 0.521,
+        "nDCG@K": 0.7593,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 1.0,
+        "Latency(s)": 0.5237
+      },
+      "vector_ranking_metrics": {
+        "Precision@K": 0.2,
+        "Recall@K": 0.2,
+        "F1@K": 0.2,
+        "MRR": 1.0,
+        "MAP": 0.2,
+        "nDCG@K": 0.3392,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.2,
+        "Latency(s)": 0.3858
+      },
+      "graph_judge_scores": {
+        "relevance": 3,
+        "faithfulness": 2,
+        "completeness": 2,
+        "reasoning": "The generated answer partially addresses the question but introduces invented relationships and suffers from hallucinations, missing key details from the ground truth.",
+        "relevance_norm": 0.5,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.25
+      },
+      "vector_judge_scores": {
+        "relevance": 5,
+        "faithfulness": 3,
+        "completeness": 4,
+        "reasoning": "The generated answer partially captures the limitations of GraphRAG, but introduces new concepts (Fragmented Knowledge, LightRAG) not present in the ground truth, affecting its faithfulness score.",
+        "relevance_norm": 1.0,
+        "faithfulness_norm": 0.5,
+        "completeness_norm": 0.75
+      },
+      "graph_context_judge": {
+        "sufficiency": 5,
+        "precision": 5,
+        "structural_richness": 5,
+        "reasoning": "The context provides a clear and relevant chain of relationships between GraphRAG, its techniques, and limitations, enabling a comprehensive understanding of the topic.",
+        "sufficiency_norm": 1.0,
+        "precision_norm": 1.0,
+        "structural_richness_norm": 1.0
+      },
+      "vector_context_judge": {
+        "sufficiency": 4,
+        "precision": 4,
+        "structural_richness": 3,
+        "reasoning": "The context partially enables a correct answer by providing relevant information about GraphRAG, but lacks specific details about its techniques and limitations.",
+        "sufficiency_norm": 0.75,
+        "precision_norm": 0.75,
+        "structural_richness_norm": 0.5
+      }
+    },
+    {
+      "query": "Why do global question answering tasks require a knowledge graph?",
+      "query_type": "TYPE A \u2014 traversal-required",
+      "relevant_entities": [
+        "Multi-hop QA",
+        "Knowledge Graph",
+        "Multi-hop Reasoning",
+        "Global QA"
+      ],
+      "graph_retrieved": [
+        "Global QA",
+        "Multimodal Knowledge Graph",
+        "MegaRAG",
+        "Knowledge Graph",
+        "HybridRAG",
+        "Multi-hop Reasoning",
+        "Graph Traversal",
+        "Comprehensiveness",
+        "GraphRAG",
+        "NaiveRAG",
+        "Diversity",
+        "MMRAG Benchmark",
+        "Hallucination",
+        "Graph Refinement",
+        "Fragmented Knowledge",
+        "LightRAG",
+        "MMKG Construction",
+        "One-hop Expansion",
+        "GPT-4o-mini",
+        "Dual-level Retrieval",
+        "GME",
+        "Context Window Limitation",
+        "Cross-modal Reasoning",
+        "Empowerment",
+        "Dense Retrieval"
+      ],
+      "vector_retrieved": [
+        "Global QA",
+        "Multimodal Knowledge Graph",
+        "MegaRAG",
+        "Knowledge Graph",
+        "HybridRAG"
+      ],
+      "graph_triples_count": 12,
+      "graph_context": "(Global QA) --[requires]--> (Knowledge Graph)\n(MegaRAG) --[builds]--> (Multimodal Knowledge Graph)\n(Multimodal Knowledge Graph) --[extends]--> (Knowledge Graph)\n(Global QA) --[requires]--> (Multi-hop Reasoning)\n(MegaRAG) --[uses technique]--> (Graph Traversal)\n(HybridRAG) --[combines]--> (Graph Traversal)\n(MegaRAG) --[addresses]--> (Fragmented Knowledge)\n(MegaRAG) --[outperforms]--> (LightRAG)\n(MegaRAG) --[measured by]--> (Comprehensiveness)\n(MegaRAG) --[outperforms]--> (GraphRAG)\n(MegaRAG) --[outperforms]--> (NaiveRAG)\n(MegaRAG) --[uses technique]--> (One-hop Expansion)",
+      "vector_context": "Entity: Global QA (relevance=0.374)\n  Description: A question answering task requiring corpus-level understanding and synthesis of information across multiple document sections.\n\nEntity: Multimodal Knowledge Graph (relevance=0.271)\n  Description: A knowledge graph that associates entities with aligned visual, numeric, and textual descriptions across modalities.\n\nEntity: MegaRAG (relevance=0.245)\n  Description: A multimodal knowledge graph-based retrieval augmented generation system that combines visual, textual, and structural information for document question answering.\n\nEntity: Knowledge Gra",
+      "graph_answer": "Global QA requires a Knowledge Graph as indicated by the relationship (Global QA) --[requires]--> (Knowledge Graph). This requirement is further supported by the fact that Knowledge Graph is extended by Multimodal Knowledge Graph, which is built by MegaRAG. The relationship between Global QA and Knowledge Graph is direct, with no intermediate entities mentioned.",
+      "vector_answer": "Global QA requires a knowledge graph because it demands corpus-level understanding and synthesis of information across multiple document sections. A Knowledge Graph, which is a structured representation of information as entities and semantic relationships, can facilitate this understanding. Additionally, entities like Multimodal Knowledge Graph and MegaRAG, which utilize knowledge graphs, can also support Global QA tasks by associating entities with aligned descriptions and combining visual, textual, and structural information.",
+      "graph_ranking_metrics": {
+        "Precision@K": 0.3,
+        "Recall@K": 0.75,
+        "F1@K": 0.4286,
+        "MRR": 1.0,
+        "MAP": 0.5,
+        "nDCG@K": 0.6976,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.75,
+        "Latency(s)": 0.4707
+      },
+      "vector_ranking_metrics": {
+        "Precision@K": 0.4,
+        "Recall@K": 0.5,
+        "F1@K": 0.4444,
+        "MRR": 1.0,
+        "MAP": 0.375,
+        "nDCG@K": 0.5585,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.5,
+        "Latency(s)": 0.6141
+      },
+      "graph_judge_scores": {
+        "relevance": 5,
+        "faithfulness": 2,
+        "completeness": 2,
+        "reasoning": "The generated answer partially addresses the question but introduces incorrect information and omits key aspects from the ground truth.",
+        "relevance_norm": 1.0,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.25
+      },
+      "vector_judge_scores": {
+        "relevance": 5,
+        "faithfulness": 4,
+        "completeness": 4,
+        "reasoning": "The generated answer effectively conveys the importance of knowledge graphs in facilitating multi-hop reasoning for global QA tasks, but slightly deviates from the ground truth by introducing specific entity examples not present in the original answer.",
+        "relevance_norm": 1.0,
+        "faithfulness_norm": 0.75,
+        "completeness_norm": 0.75
+      },
+      "graph_context_judge": {
+        "sufficiency": 3,
+        "precision": 4,
+        "structural_richness": 3,
+        "reasoning": "The context partially helps to answer the question by mentioning the relationship between Global QA and Knowledge Graph, but it lacks a clear explanation of why a knowledge graph is required.",
+        "sufficiency_norm": 0.5,
+        "precision_norm": 0.75,
+        "structural_richness_norm": 0.5
+      },
+      "vector_context_judge": {
+        "sufficiency": 4,
+        "precision": 4,
+        "structural_richness": 3,
+        "reasoning": "The context partially enables a correct answer by providing relevant information about knowledge graphs and their applications in global QA, but lacks a clear explanation of why they are required.",
+        "sufficiency_norm": 0.75,
+        "precision_norm": 0.75,
+        "structural_richness_norm": 0.5
+      }
+    },
+    {
+      "query": "How does LightRAG improve over GraphRAG and what retrieval approach does it use?",
+      "query_type": "TYPE C \u2014 multi-hop",
+      "relevant_entities": [
+        "LightRAG",
+        "Dual-level Retrieval",
+        "GraphRAG",
+        "Graph Traversal",
+        "Dense Retrieval"
+      ],
+      "graph_retrieved": [
+        "LightRAG",
+        "Dense Retrieval",
+        "Sparse Retrieval",
+        "GraphRAG",
+        "Over-smoothing Problem",
+        "MegaRAG",
+        "HybridRAG",
+        "Dual-level Retrieval",
+        "Context Window Limitation",
+        "Community Detection",
+        "Knowledge Graph",
+        "ColPaLi",
+        "DSE",
+        "Entity Extraction",
+        "Graph Traversal",
+        "Vector Similarity Search",
+        "Local QA",
+        "Multi-hop QA"
+      ],
+      "vector_retrieved": [
+        "LightRAG",
+        "Dense Retrieval",
+        "Sparse Retrieval",
+        "GraphRAG",
+        "Over-smoothing Problem"
+      ],
+      "graph_triples_count": 11,
+      "graph_context": "(LightRAG) --[uses technique]--> (Dense Retrieval)\n(LightRAG) --[improves over]--> (GraphRAG)\n(LightRAG) --[uses technique]--> (Dual-level Retrieval)\n(Over-smoothing Problem) --[occurs in]--> (Dense Retrieval)\n(LightRAG) --[uses technique]--> (Graph Traversal)\n(GraphRAG) --[suffers from]--> (Context Window Limitation)\n(Dense Retrieval) --[uses technique]--> (Vector Similarity Search)\n(GraphRAG) --[uses technique]--> (Community Detection)\n(GraphRAG) --[builds]--> (Knowledge Graph)\n(GraphRAG) --[uses technique]--> (Entity Extraction)\n(GraphRAG) --[addresses]--> (Multi-hop QA)",
+      "vector_context": "Entity: LightRAG (relevance=0.322)\n  Description: An efficient graph-based RAG system introducing two-stage retrieval with local and global keywords to reduce repeated LLM inference and improve scalability.\n\nEntity: Dense Retrieval (relevance=0.243)\n  Description: A retrieval approach that projects queries and documents into a shared embedding space for semantic similarity-based matching.\n\nEntity: Sparse Retrieval (relevance=0.218)\n  Description: A retrieval approach using lexical heuristics like TF-IDF and BM25 to match queries with text segments.\n\nEntity: GraphRAG (relevance=0.174)\n  Descrip",
+      "graph_answer": "LightRAG improves over GraphRAG through the relationship (LightRAG) --[improves over]--> (GraphRAG). GraphRAG suffers from the Context Window Limitation, which LightRAG likely addresses. LightRAG uses techniques such as Dense Retrieval and Dual-level Retrieval, as indicated by the relationships (LightRAG) --[uses technique]--> (Dense Retrieval) and (LightRAG) --[uses technique]--> (Dual-level Retrieval). Additionally, LightRAG also utilizes Graph Traversal as a technique.",
+      "vector_answer": "LightRAG improves over GraphRAG by introducing two-stage retrieval with local and global keywords to reduce repeated LLM inference and improve scalability. LightRAG is an efficient graph-based RAG system, whereas GraphRAG is Microsoft's knowledge graph-based RAG system. The retrieval approach used by LightRAG is not explicitly stated, but it is a graph-based system, differing from Dense Retrieval and Sparse Retrieval which project queries and documents into a shared embedding space and use lexical heuristics, respectively. This distinction highlights the unique approach of LightRAG in comparison to other retrieval methods like Dense Retrieval and Sparse Retrieval.",
+      "graph_ranking_metrics": {
+        "Precision@K": 0.4,
+        "Recall@K": 0.8,
+        "F1@K": 0.5333,
+        "MRR": 1.0,
+        "MAP": 0.7167,
+        "nDCG@K": 0.8062,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 1.0,
+        "Latency(s)": 0.5739
+      },
+      "vector_ranking_metrics": {
+        "Precision@K": 0.6,
+        "Recall@K": 0.6,
+        "F1@K": 0.6,
+        "MRR": 1.0,
+        "MAP": 0.55,
+        "nDCG@K": 0.6992,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.6,
+        "Latency(s)": 0.718
+      },
+      "graph_judge_scores": {
+        "relevance": 3,
+        "faithfulness": 2,
+        "completeness": 2,
+        "reasoning": "The generated answer partially addresses the question but introduces incorrect relationships and techniques, and fails to accurately describe the improvements of LightRAG over GraphRAG.",
+        "relevance_norm": 0.5,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.25
+      },
+      "vector_judge_scores": {
+        "relevance": 4,
+        "faithfulness": 3,
+        "completeness": 3,
+        "reasoning": "The generated answer partially addresses the question, but introduces minor inaccuracies and lacks specific details from the ground truth.",
+        "relevance_norm": 0.75,
+        "faithfulness_norm": 0.5,
+        "completeness_norm": 0.5
+      },
+      "graph_context_judge": {
+        "sufficiency": 5,
+        "precision": 5,
+        "structural_richness": 5,
+        "reasoning": "The context provides a clear chain of relationships between LightRAG, GraphRAG, and their respective techniques, enabling a comprehensive understanding of how LightRAG improves over GraphRAG.",
+        "sufficiency_norm": 1.0,
+        "precision_norm": 1.0,
+        "structural_richness_norm": 1.0
+      },
+      "vector_context_judge": {
+        "sufficiency": 5,
+        "precision": 5,
+        "structural_richness": 3,
+        "reasoning": "The context provides a clear connection between LightRAG, GraphRAG, and retrieval approaches, enabling the evaluation of how LightRAG improves over GraphRAG.",
+        "sufficiency_norm": 1.0,
+        "precision_norm": 1.0,
+        "structural_richness_norm": 0.5
+      }
+    },
+    {
+      "query": "What metrics are used to evaluate MegaRAG and what do they measure?",
+      "query_type": "TYPE B \u2014 relationship-reasoning",
+      "relevant_entities": [
+        "Comprehensiveness",
+        "MegaRAG",
+        "Diversity",
+        "Empowerment",
+        "MMRAG Benchmark"
+      ],
+      "graph_retrieved": [
+        "MegaRAG",
+        "Cora Dataset",
+        "Precision",
+        "Fragmented Knowledge",
+        "SentenceTransformer",
+        "MMRAG Benchmark",
+        "Context Window Limitation",
+        "GPT-4o-mini",
+        "LightRAG",
+        "Cross-modal Reasoning",
+        "Empowerment",
+        "Graph Traversal",
+        "Diversity",
+        "Vector Similarity Search",
+        "One-hop Expansion",
+        "GraphRAG",
+        "GME",
+        "Node Classification",
+        "Multi-hop Reasoning",
+        "Multimodal Knowledge Graph",
+        "Dual-level Retrieval",
+        "NaiveRAG",
+        "Comprehensiveness",
+        "Edge Classification"
+      ],
+      "vector_retrieved": [
+        "MegaRAG",
+        "Cora Dataset",
+        "Precision",
+        "Fragmented Knowledge",
+        "SentenceTransformer"
+      ],
+      "graph_triples_count": 12,
+      "graph_context": "(MegaRAG) --[addresses]--> (Fragmented Knowledge)\n(MegaRAG) --[uses model]--> (GPT-4o-mini)\n(MegaRAG) --[outperforms]--> (LightRAG)\n(MegaRAG) --[enables]--> (Cross-modal Reasoning)\n(MegaRAG) --[measured by]--> (Empowerment)\n(MegaRAG) --[uses technique]--> (Graph Traversal)\n(MegaRAG) --[measured by]--> (Diversity)\n(MegaRAG) --[uses technique]--> (One-hop Expansion)\n(MegaRAG) --[outperforms]--> (GraphRAG)\n(MegaRAG) --[uses model]--> (GME)\n(MegaRAG) --[enables]--> (Multi-hop Reasoning)\n(MegaRAG) --[builds]--> (Multimodal Knowledge Graph)",
+      "vector_context": "Entity: MegaRAG (relevance=0.172)\n  Description: A multimodal knowledge graph-based retrieval augmented generation system that combines visual, textual, and structural information for document question answering.\n\nEntity: Cora Dataset (relevance=0.154)\n  Description: A citation network benchmark dataset used to evaluate graph neural network models on node classification tasks.\n\nEntity: Precision (relevance=0.151)\n  Description: A retrieval metric measuring the fraction of retrieved items that are relevant to the query.\n\nEntity: Fragmented Knowledge (relevance=0.138)\n  Description: The problem ",
+      "graph_answer": "MegaRAG is measured by Empowerment and Diversity, as indicated by the --[measured by]--> relationships. These relationships connect MegaRAG to the metrics Empowerment and Diversity. The facts do not specify what these metrics measure. MegaRAG's performance is also compared to other entities, such as LightRAG and GraphRAG, through --[outperforms]--> relationships.",
+      "vector_answer": "MegaRAG is a retrieval augmented generation system, and one of the metrics used to evaluate such systems is Precision, which measures the fraction of retrieved items that are relevant to the query. Precision is a retrieval metric, and it is likely used to evaluate the performance of MegaRAG in retrieving relevant information. The relevance of MegaRAG is 0.172, indicating its importance in the context of the retrieved entities.",
+      "graph_ranking_metrics": {
+        "Precision@K": 0.2,
+        "Recall@K": 0.4,
+        "F1@K": 0.2667,
+        "MRR": 1.0,
+        "MAP": 0.4262,
+        "nDCG@K": 0.46,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 1.0,
+        "Latency(s)": 0.5732
+      },
+      "vector_ranking_metrics": {
+        "Precision@K": 0.2,
+        "Recall@K": 0.2,
+        "F1@K": 0.2,
+        "MRR": 1.0,
+        "MAP": 0.2,
+        "nDCG@K": 0.3392,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.2,
+        "Latency(s)": 0.4077
+      },
+      "graph_judge_scores": {
+        "relevance": 5,
+        "faithfulness": 2,
+        "completeness": 2,
+        "reasoning": "The answer partially addresses the question, but introduces hallucinated details about the metrics' measurements and invents the concept of '--[measured by]-->' and '--[outperforms]-->' relationships, which are not present in the ground truth.",
+        "relevance_norm": 1.0,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.25
+      },
+      "vector_judge_scores": {
+        "relevance": 3,
+        "faithfulness": 2,
+        "completeness": 1,
+        "reasoning": "The answer partially addresses the question, but introduces incorrect metrics and relevance score, and misses most key points from the ground truth.",
+        "relevance_norm": 0.5,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.0
+      },
+      "graph_context_judge": {
+        "sufficiency": 5,
+        "precision": 5,
+        "structural_richness": 5,
+        "reasoning": "The context provides a clear and detailed network of relationships between MegaRAG and various metrics, techniques, and applications, enabling a comprehensive understanding of the evaluation metrics used for MegaRAG.",
+        "sufficiency_norm": 1.0,
+        "precision_norm": 1.0,
+        "structural_richness_norm": 1.0
+      },
+      "vector_context_judge": {
+        "sufficiency": 3,
+        "precision": 4,
+        "structural_richness": 2,
+        "reasoning": "The context partially helps to answer the question, but lacks specific information about the metrics used to evaluate MegaRAG, requiring additional reasoning to infer the relevant metrics.",
+        "sufficiency_norm": 0.5,
+        "precision_norm": 0.75,
+        "structural_richness_norm": 0.25
+      }
+    },
+    {
+      "query": "What datasets are used to benchmark node classification in graph neural networks?",
+      "query_type": "TYPE A \u2014 traversal-required",
+      "relevant_entities": [
+        "Social Networks",
+        "Protein-Protein Interaction Networks",
+        "Cora Dataset",
+        "Node Classification"
+      ],
+      "graph_retrieved": [
+        "Node Classification",
+        "Social Networks",
+        "MMRAG Benchmark",
+        "Edge Classification",
+        "Cora Dataset",
+        "MegaRAG",
+        "Protein-Protein Interaction Networks",
+        "Empowerment",
+        "Link Prediction",
+        "Comprehensiveness",
+        "Diversity"
+      ],
+      "vector_retrieved": [
+        "Node Classification",
+        "Social Networks",
+        "MMRAG Benchmark",
+        "Edge Classification",
+        "Cora Dataset"
+      ],
+      "graph_triples_count": 6,
+      "graph_context": "(Node Classification) --[evaluates on]--> (Cora Dataset)\n(Node Classification) --[evaluates on]--> (Protein-Protein Interaction Networks)\n(Edge Classification) --[evaluates on]--> (Cora Dataset)\n(MMRAG Benchmark) --[measures]--> (Empowerment)\n(MMRAG Benchmark) --[measures]--> (Comprehensiveness)\n(MMRAG Benchmark) --[measures]--> (Diversity)",
+      "vector_context": "Entity: Node Classification (relevance=0.346)\n  Description: A graph learning task of predicting labels for individual nodes in a graph based on their features and neighborhood.\n\nEntity: Social Networks (relevance=0.290)\n  Description: Graph-structured data representing relationships between individuals, commonly used for node classification and link prediction benchmarks.\n\nEntity: MMRAG Benchmark (relevance=0.217)\n  Description: A multimodal RAG evaluation benchmark spanning agriculture, computer science, legal, and mixed domains.\n\nEntity: Edge Classification (relevance=0.211)\n  Description: ",
+      "graph_answer": "Node classification is evaluated on the Cora Dataset and Protein-Protein Interaction Networks. The relationship type \"evaluates on\" is used to connect Node Classification to these datasets. The Cora Dataset is also used to evaluate Edge Classification, but for Node Classification, it is one of the two datasets along with Protein-Protein Interaction Networks.",
+      "vector_answer": "The Cora Dataset is used to evaluate graph neural network models on node classification tasks. Social Networks are also commonly used for node classification benchmarks. Additionally, the MMRAG Benchmark spans multiple domains and may be relevant to node classification evaluations.",
+      "graph_ranking_metrics": {
+        "Precision@K": 0.4,
+        "Recall@K": 1.0,
+        "F1@K": 0.5714,
+        "MRR": 1.0,
+        "MAP": 0.7929,
+        "nDCG@K": 0.9178,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 1.0,
+        "Latency(s)": 0.5214
+      },
+      "vector_ranking_metrics": {
+        "Precision@K": 0.6,
+        "Recall@K": 0.75,
+        "F1@K": 0.6667,
+        "MRR": 1.0,
+        "MAP": 0.65,
+        "nDCG@K": 0.7877,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.75,
+        "Latency(s)": 0.3062
+      },
+      "graph_judge_scores": {
+        "relevance": 4,
+        "faithfulness": 2,
+        "completeness": 2,
+        "reasoning": "The generated answer partially addresses the question but introduces incorrect information about the Cora Dataset being used for Edge Classification and the relationship type 'evaluates on'.",
+        "relevance_norm": 0.75,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.25
+      },
+      "vector_judge_scores": {
+        "relevance": 4,
+        "faithfulness": 3,
+        "completeness": 2,
+        "reasoning": "The answer partially addresses the question, is mostly correct with minor issues, but misses some key details and introduces a new benchmark (MMRAG) not mentioned in the ground truth.",
+        "relevance_norm": 0.75,
+        "faithfulness_norm": 0.5,
+        "completeness_norm": 0.25
+      },
+      "graph_context_judge": {
+        "sufficiency": 3,
+        "precision": 4,
+        "structural_richness": 2,
+        "reasoning": "The context partially helps to answer the question, but it requires additional inference to identify the relevant datasets for node classification in graph neural networks.",
+        "sufficiency_norm": 0.5,
+        "precision_norm": 0.75,
+        "structural_richness_norm": 0.25
+      },
+      "vector_context_judge": {
+        "sufficiency": 5,
+        "precision": 5,
+        "structural_richness": 3,
+        "reasoning": "The context provides a clear connection between node classification and relevant datasets, enabling a direct answer to the question.",
+        "sufficiency_norm": 1.0,
+        "precision_norm": 1.0,
+        "structural_richness_norm": 0.5
+      }
+    },
+    {
+      "query": "How does a hybrid RAG system that combines vector search and graph traversal enable multi-hop question answering?",
+      "query_type": "TYPE C \u2014 multi-hop (hardest)",
+      "relevant_entities": [
+        "HybridRAG",
+        "Multi-hop QA",
+        "Multi-hop Reasoning",
+        "Graph Traversal",
+        "Knowledge Graph",
+        "Dense Retrieval"
+      ],
+      "graph_retrieved": [
+        "MegaRAG",
+        "Multi-hop QA",
+        "Vector Similarity Search",
+        "HybridRAG",
+        "Graph Traversal",
+        "Multi-hop Reasoning",
+        "GraphRAG",
+        "LightRAG",
+        "NaiveRAG",
+        "One-hop Expansion",
+        "MMRAG Benchmark",
+        "GME",
+        "Dense Retrieval",
+        "Multimodal Knowledge Graph",
+        "SentenceTransformer",
+        "Context Window Limitation",
+        "Comprehensiveness",
+        "Cross-modal Reasoning",
+        "GPT-4o-mini",
+        "Fragmented Knowledge",
+        "Diversity",
+        "Dual-level Retrieval",
+        "Empowerment"
+      ],
+      "vector_retrieved": [
+        "MegaRAG",
+        "Multi-hop QA",
+        "Vector Similarity Search",
+        "HybridRAG",
+        "Graph Traversal"
+      ],
+      "graph_triples_count": 12,
+      "graph_context": "(MegaRAG) --[uses technique]--> (Graph Traversal)\n(Multi-hop QA) --[requires]--> (Graph Traversal)\n(MegaRAG) --[enables]--> (Multi-hop Reasoning)\n(MegaRAG) --[outperforms]--> (GraphRAG)\n(MegaRAG) --[outperforms]--> (LightRAG)\n(HybridRAG) --[combines]--> (Graph Traversal)\n(MegaRAG) --[builds]--> (Multimodal Knowledge Graph)\n(MegaRAG) --[outperforms]--> (NaiveRAG)\n(MegaRAG) --[uses technique]--> (One-hop Expansion)\n(MegaRAG) --[addresses]--> (Context Window Limitation)\n(MegaRAG) --[evaluates on]--> (MMRAG Benchmark)\n(MegaRAG) --[measured by]--> (MMRAG Benchmark)",
+      "vector_context": "Entity: MegaRAG (relevance=0.335)\n  Description: A multimodal knowledge graph-based retrieval augmented generation system that combines visual, textual, and structural information for document question answering.\n\nEntity: Multi-hop QA (relevance=0.328)\n  Description: A question answering task that requires chaining multiple reasoning steps across connected pieces of information.\n\nEntity: Vector Similarity Search (relevance=0.252)\n  Description: A technique to find semantically similar entities by comparing embedding vectors using cosine distance.\n\nEntity: HybridRAG (relevance=0.248)\n  Descript",
+      "graph_answer": "A hybrid RAG system, such as HybridRAG, combines graph traversal, which is a technique used by MegaRAG. MegaRAG enables multi-hop reasoning, and multi-hop QA requires graph traversal. The combination of graph traversal in HybridRAG can thus enable multi-hop question answering.",
+      "vector_answer": "A HybridRAG system combines vector search, such as Vector Similarity Search, and graph-based reasoning, which involves Graph Traversal, to enable question answering. This combination allows the system to navigate a knowledge graph by following relationship edges, as in Graph Traversal, to discover connected entities. By alternating between naive dense retrieval and graph-based reasoning, HybridRAG can support Multi-hop QA, which requires chaining multiple reasoning steps across connected pieces of information. This process enables the system to find semantically similar entities, as in Vector Similarity Search, to answer complex questions.",
+      "graph_ranking_metrics": {
+        "Precision@K": 0.4,
+        "Recall@K": 0.6667,
+        "F1@K": 0.5,
+        "MRR": 0.5,
+        "MAP": 0.4419,
+        "nDCG@K": 0.5461,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.8333,
+        "Latency(s)": 0.7288
+      },
+      "vector_ranking_metrics": {
+        "Precision@K": 0.6,
+        "Recall@K": 0.5,
+        "F1@K": 0.5455,
+        "MRR": 0.5,
+        "MAP": 0.2667,
+        "nDCG@K": 0.4913,
+        "HitRate@K": 1.0,
+        "EntityCoverage": 0.5,
+        "Latency(s)": 0.5119
+      },
+      "graph_judge_scores": {
+        "relevance": 3,
+        "faithfulness": 2,
+        "completeness": 2,
+        "reasoning": "The generated answer partially addresses the question but lacks specific details and introduces incorrect information about MegaRAG and HybridRAG.",
+        "relevance_norm": 0.5,
+        "faithfulness_norm": 0.25,
+        "completeness_norm": 0.25
+      },
+      "vector_judge_scores": {
+        "relevance": 5,
+        "faithfulness": 4,
+        "completeness": 4,
+        "reasoning": "The generated answer effectively conveys the key concept of combining vector search and graph traversal for multi-hop question answering, but slightly rephrases the ground truth without adding new information.",
+        "relevance_norm": 1.0,
+        "faithfulness_norm": 0.75,
+        "completeness_norm": 0.75
+      },
+      "graph_context_judge": {
+        "sufficiency": 4,
+        "precision": 5,
+        "structural_richness": 4,
+        "reasoning": "The context provides a clear connection between MegaRAG's use of graph traversal and its ability to enable multi-hop question answering, but lacks explicit information on how vector search contributes to this capability.",
+        "sufficiency_norm": 0.75,
+        "precision_norm": 1.0,
+        "structural_richness_norm": 0.75
+      },
+      "vector_context_judge": {
+        "sufficiency": 4,
+        "precision": 5,
+        "structural_richness": 4,
+        "reasoning": "The context provides a clear understanding of the components involved in a hybrid RAG system, enabling the reasoning behind how vector search and graph traversal facilitate multi-hop question answering.",
+        "sufficiency_norm": 0.75,
+        "precision_norm": 1.0,
+        "structural_richness_norm": 0.75
+      }
+    }
+  ]
+}
