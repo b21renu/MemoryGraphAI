@@ -1,0 +1,540 @@
+{
+    "entities": [
+        "Graph Neural Networks (GNNs)",
+        "Unsupervised setting",
+        "Graph Type",
+        "Graph Recurrent Network (GRN)",
+        "Graph Convolutional Network (GCN)",
+        "GNN model",
+        "TADW",
+        "Supervised setting",
+        "Graph Attention Network (GAT)",
+        "Lee et al. (2018a)",
+        "Graph Convolutional Networks",
+        "Huang et al. (2020)",
+        "Spatial-Temporal Graph Neural Networks",
+        "Bronstein et al.",
+        "DeepWalk",
+        "Node2vec",
+        "Recurrent Graph Neural Networks",
+        "Node clustering",
+        "Knowledge Graphs",
+        "Hypergraphs",
+        "Chami et al. (2020)",
+        "Tang et al.",
+        "Edge Classification",
+        "Recurrent Neural Networks",
+        "Undirected Graphs",
+        "Graph Scale",
+        "Graph Attention Models",
+        "Heterogeneous Graphs",
+        "Node Classification",
+        "Graph Encoder Decoder Model",
+        "Static Graphs",
+        "Zhang et al.",
+        "Heterogeneous Graph Representation Learning",
+        "Signed Graphs",
+        "Directed Graphs",
+        "Homogeneous Graphs",
+        "Graph Neural Networks",
+        "Word Embedding",
+        "Cora Dataset",
+        "Loss Function",
+        "Sun et al. (2018)",
+        "Hamilton et al.",
+        "Edge-level Tasks",
+        "Graph Representation Learning",
+        "Adversarial Learning Methods",
+        "Cross-entropy loss",
+        "Peng et al. (2020)",
+        "Node Clustering",
+        "Skip connection",
+        "Pooling module",
+        "Graph Matching",
+        "Chen et al. (2020a)",
+        "Graph Structure",
+        "Graph Regression",
+        "Convolutional Graph Neural Networks",
+        "Yang et al. (2020)",
+        "Social Networks",
+        "Recurrent operator",
+        "Chami et al.",
+        "Node-level Tasks",
+        "Zang and Wang (2020)",
+        "LeCun et al.",
+        "Clustering",
+        "Yang et al.",
+        "Sampling module",
+        "Recursive Neural Networks",
+        "Deep Learning",
+        "Combinatorial Optimization",
+        "Convolutional Neural Networks",
+        "Rossi et al. (2018)",
+        "Graph Data",
+        "Perozzi et al.",
+        "Convolutional Neural Networks (CNNs)",
+        "Wang and Leskovec (2020)",
+        "Physical Systems",
+        "Zhang et al. (2018b)",
+        "LINE",
+        "Cui et al.",
+        "Graph Analysis",
+        "Wu et al.",
+        "Wu et al. (2019a)",
+        "Link Prediction",
+        "Semi-supervised setting",
+        "Graph-level Tasks",
+        "Protein-Protein Interaction Networks",
+        "Dynamic Graphs",
+        "Graph Classification",
+        "Graph Neural Networks (GNN)",
+        "Geometric Deep Learning",
+        "Node classification",
+        "Node Regression",
+        "NDCN",
+        "Feedforward Neural Networks",
+        "Edge classification",
+        "Graph Autoencoders",
+        "Mikolov et al.",
+        "Machine Learning",
+        "Convolution operator",
+        "Grover and Leskovec"
+    ],
+    "relationships": [
+        {
+            "source": "Graph Neural Networks",
+            "relation": "EVALUATED_ON",
+            "target": "Cora Dataset"
+        },
+        {
+            "source": "Graph Convolutional Network (GCN)",
+            "relation": "IS_A",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Graph Attention Network (GAT)",
+            "relation": "IS_A",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Graph Recurrent Network (GRN)",
+            "relation": "IS_A",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "USED_IN",
+            "target": "Deep Learning"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "USED_IN",
+            "target": "Machine Learning"
+        },
+        {
+            "source": "Convolutional Neural Networks (CNNs)",
+            "relation": "INFLUENCED",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Recursive Neural Networks",
+            "relation": "INFLUENCED",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Recurrent Neural Networks",
+            "relation": "INFLUENCED",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Feedforward Neural Networks",
+            "relation": "INFLUENCED",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "APPLIED_TO",
+            "target": "Node Classification"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "APPLIED_TO",
+            "target": "Link Prediction"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "APPLIED_TO",
+            "target": "Clustering"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "APPLIED_TO",
+            "target": "Social Networks"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "APPLIED_TO",
+            "target": "Physical Systems"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "APPLIED_TO",
+            "target": "Protein-Protein Interaction Networks"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "APPLIED_TO",
+            "target": "Knowledge Graphs"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "EVALUATED_ON",
+            "target": "Cora Dataset"
+        },
+        {
+            "source": "Convolutional Neural Networks",
+            "relation": "GENERALIZED_TO",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Graph Representation Learning",
+            "relation": "RELATED_TO",
+            "target": "Deep Learning"
+        },
+        {
+            "source": "Geometric Deep Learning",
+            "relation": "UMBRELLA_TERM_FOR",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Graph Analysis",
+            "relation": "USES",
+            "target": "Machine Learning"
+        },
+        {
+            "source": "Word Embedding",
+            "relation": "INSPIRED",
+            "target": "Graph Representation Learning"
+        },
+        {
+            "source": "DeepWalk",
+            "relation": "BASED_ON",
+            "target": "SkipGram model"
+        },
+        {
+            "source": "Node2vec",
+            "relation": "SIMILAR_TO",
+            "target": "DeepWalk"
+        },
+        {
+            "source": "LINE",
+            "relation": "SIMILAR_TO",
+            "target": "DeepWalk"
+        },
+        {
+            "source": "TADW",
+            "relation": "SIMILAR_TO",
+            "target": "DeepWalk"
+        },
+        {
+            "source": "Graph Convolutional Networks",
+            "relation": "TYPE_OF",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Recurrent Graph Neural Networks",
+            "relation": "TYPE_OF",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Convolutional Graph Neural Networks",
+            "relation": "TYPE_OF",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Graph Autoencoders",
+            "relation": "TYPE_OF",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "LeCun et al.",
+            "relation": "AUTHORED",
+            "target": "Convolutional Neural Networks"
+        },
+        {
+            "source": "Bronstein et al.",
+            "relation": "AUTHORED",
+            "target": "Geometric Deep Learning"
+        },
+        {
+            "source": "Cui et al.",
+            "relation": "AUTHORED",
+            "target": "Graph Representation Learning"
+        },
+        {
+            "source": "Hamilton et al.",
+            "relation": "AUTHORED",
+            "target": "Graph Representation Learning"
+        },
+        {
+            "source": "Zhang et al.",
+            "relation": "AUTHORED",
+            "target": "Graph Convolutional Networks"
+        },
+        {
+            "source": "Mikolov et al.",
+            "relation": "AUTHORED",
+            "target": "Word Embedding"
+        },
+        {
+            "source": "Perozzi et al.",
+            "relation": "AUTHORED",
+            "target": "DeepWalk"
+        },
+        {
+            "source": "Grover and Leskovec",
+            "relation": "AUTHORED",
+            "target": "Node2vec"
+        },
+        {
+            "source": "Tang et al.",
+            "relation": "AUTHORED",
+            "target": "LINE"
+        },
+        {
+            "source": "Yang et al.",
+            "relation": "AUTHORED",
+            "target": "TADW"
+        },
+        {
+            "source": "Wu et al.",
+            "relation": "AUTHORED",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Chami et al.",
+            "relation": "AUTHORED",
+            "target": "Graph Neural Networks"
+        },
+        {
+            "source": "Graph Neural Networks (GNNs)",
+            "relation": "CATEGORIZED_BY",
+            "target": "Wu et al. (2019a)"
+        },
+        {
+            "source": "Graph Neural Networks (GNNs)",
+            "relation": "OVERVIEWED_BY",
+            "target": "Zhang et al. (2018b)"
+        },
+        {
+            "source": "Graph Neural Networks (GNNs)",
+            "relation": "MODELED_BY",
+            "target": "Graph Encoder Decoder Model"
+        },
+        {
+            "source": "Adversarial Learning Methods",
+            "relation": "OVERVIEWED_BY",
+            "target": "Sun et al. (2018)"
+        },
+        {
+            "source": "Graph Attention Models",
+            "relation": "REVIEWED_BY",
+            "target": "Lee et al. (2018a)"
+        },
+        {
+            "source": "Heterogeneous Graph Representation Learning",
+            "relation": "FOCUSED_ON",
+            "target": "Yang et al. (2020)"
+        },
+        {
+            "source": "Dynamic Graphs",
+            "relation": "REVIEWED_BY",
+            "target": "Huang et al. (2020)"
+        },
+        {
+            "source": "Combinatorial Optimization",
+            "relation": "SUMMARIZED_BY",
+            "target": "Peng et al. (2020)"
+        },
+        {
+            "source": "Graph Neural Networks (GNNs)",
+            "relation": "APPLIED_TO",
+            "target": "Structural Scenarios"
+        },
+        {
+            "source": "Graph Neural Networks (GNNs)",
+            "relation": "APPLIED_TO",
+            "target": "Non-Structural Scenarios"
+        },
+        {
+            "source": "Graph Neural Networks (GNN)",
+            "relation": "DESIGNED_FOR",
+            "target": "Graph Structure"
+        },
+        {
+            "source": "Graph Structure",
+            "relation": "CAN_BE",
+            "target": "Directed Graphs"
+        },
+        {
+            "source": "Graph Structure",
+            "relation": "CAN_BE",
+            "target": "Undirected Graphs"
+        },
+        {
+            "source": "Graph Type",
+            "relation": "INCLUDES",
+            "target": "Homogeneous Graphs"
+        },
+        {
+            "source": "Graph Type",
+            "relation": "INCLUDES",
+            "target": "Heterogeneous Graphs"
+        },
+        {
+            "source": "Graph Scale",
+            "relation": "CAN_BE",
+            "target": "Small Graphs"
+        },
+        {
+            "source": "Graph Scale",
+            "relation": "CAN_BE",
+            "target": "Large Graphs"
+        },
+        {
+            "source": "Loss Function",
+            "relation": "USED_FOR",
+            "target": "Node-level Tasks"
+        },
+        {
+            "source": "Loss Function",
+            "relation": "USED_FOR",
+            "target": "Edge-level Tasks"
+        },
+        {
+            "source": "Loss Function",
+            "relation": "USED_FOR",
+            "target": "Graph-level Tasks"
+        },
+        {
+            "source": "Node-level Tasks",
+            "relation": "INCLUDES",
+            "target": "Node Classification"
+        },
+        {
+            "source": "Node-level Tasks",
+            "relation": "INCLUDES",
+            "target": "Node Regression"
+        },
+        {
+            "source": "Node-level Tasks",
+            "relation": "INCLUDES",
+            "target": "Node Clustering"
+        },
+        {
+            "source": "Edge-level Tasks",
+            "relation": "INCLUDES",
+            "target": "Edge Classification"
+        },
+        {
+            "source": "Edge-level Tasks",
+            "relation": "INCLUDES",
+            "target": "Link Prediction"
+        },
+        {
+            "source": "Graph-level Tasks",
+            "relation": "INCLUDES",
+            "target": "Graph Classification"
+        },
+        {
+            "source": "Graph-level Tasks",
+            "relation": "INCLUDES",
+            "target": "Graph Regression"
+        },
+        {
+            "source": "Graph-level Tasks",
+            "relation": "INCLUDES",
+            "target": "Graph Matching"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "USED_FOR",
+            "target": "Node classification"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "USED_FOR",
+            "target": "Edge classification"
+        },
+        {
+            "source": "Graph Neural Networks",
+            "relation": "USED_FOR",
+            "target": "Node clustering"
+        },
+        {
+            "source": "Supervised setting",
+            "relation": "PROVIDES",
+            "target": "Labeled data"
+        },
+        {
+            "source": "Semi-supervised setting",
+            "relation": "PROVIDES",
+            "target": "Labeled nodes"
+        },
+        {
+            "source": "Semi-supervised setting",
+            "relation": "PROVIDES",
+            "target": "Unlabeled nodes"
+        },
+        {
+            "source": "Unsupervised setting",
+            "relation": "PROVIDES",
+            "target": "Unlabeled data"
+        },
+        {
+            "source": "Cross-entropy loss",
+            "relation": "USED_FOR",
+            "target": "Node classification"
+        },
+        {
+            "source": "Convolution operator",
+            "relation": "USED_IN",
+            "target": "GNN model"
+        },
+        {
+            "source": "Recurrent operator",
+            "relation": "USED_IN",
+            "target": "GNN model"
+        },
+        {
+            "source": "Skip connection",
+            "relation": "USED_IN",
+            "target": "GNN model"
+        },
+        {
+            "source": "Pooling module",
+            "relation": "USED_IN",
+            "target": "GNN model"
+        },
+        {
+            "source": "Sampling module",
+            "relation": "USED_IN",
+            "target": "GNN model"
+        },
+        {
+            "source": "Wang and Leskovec (2020)",
+            "relation": "PROPOSED",
+            "target": "Mixed transductive-inductive scheme"
+        },
+        {
+            "source": "Rossi et al. (2018)",
+            "relation": "PROPOSED",
+            "target": "Mixed transductive-inductive scheme"
+        },
+        {
+            "source": "Zang and Wang (2020)",
+            "relation": "PROPOSED",
+            "target": "NDCN"
+        }
+    ]
+}
